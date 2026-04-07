@@ -1,0 +1,534 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &957465943664717008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2440093409137597756}
+  - component: {fileID: 4804137943891974144}
+  m_Layer: 0
+  m_Name: LevelStrawberryCakeFull
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2440093409137597756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957465943664717008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3059194596458732991}
+  - {fileID: 8704120012090359276}
+  - {fileID: 888861503343111883}
+  - {fileID: 8274167767710571461}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4804137943891974144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957465943664717008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820314adc61a147ab917edba200ba2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelStrawberryCakeFull
+  CurInstanceStateLv: {fileID: 0}
+  levelCtrlStates:
+  - {fileID: 9113773760586968172}
+  - {fileID: 5031810535407707213}
+  - {fileID: 5543238918837080295}
+  - {fileID: 3114754799731713243}
+  levelCtrlState12: {fileID: 9113773760586968172}
+  levelCtrlState34: {fileID: 5031810535407707213}
+  levelCtrlState56: {fileID: 5543238918837080295}
+  levelCtrlState78: {fileID: 3114754799731713243}
+--- !u!1001 &2561176769334040251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2440093409137597756}
+    m_Modifications:
+    - target: {fileID: 831350755436529865, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_Name
+      value: LevelStrawberryCake56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 73.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3702e1831ac484e609515bba05048761, type: 3}
+--- !u!4 &888861503343111883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449474054064076912, guid: 3702e1831ac484e609515bba05048761, type: 3}
+  m_PrefabInstance: {fileID: 2561176769334040251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5543238918837080295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8027291259804894812, guid: 3702e1831ac484e609515bba05048761, type: 3}
+  m_PrefabInstance: {fileID: 2561176769334040251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506997365d6848fe99db41bed2dce540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelStrawberryCakeState56
+--- !u!1001 &5406002851747006589
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2440093409137597756}
+    m_Modifications:
+    - target: {fileID: 734888418114192121, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634409401087905644, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754554194257421501, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756787340647845776, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792118528477376004, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526129892844719936, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344683280366776372, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3593037362295315958, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720410304768407371, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854898767906923537, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: steps.Array.data[5].stepType
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997647313879922916, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769566649794376397, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982943602963441019, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_Name
+      value: LevelStrawberryCake
+      objectReference: {fileID: 0}
+    - target: {fileID: 5576536436754667654, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860304918248890561, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586113445577378451, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966987328332052982, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450180049523860907, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514427321279165047, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628038573864082167, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812836804037701688, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7893778166438684092, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152905748609079017, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647368025335432192, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655742300638083882, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171287525536569016, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+--- !u!4 &3059194596458732991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7021546905257022914, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+  m_PrefabInstance: {fileID: 5406002851747006589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9113773760586968172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3854898767906923537, guid: 5f50f255958aa48dc8d25bce57966058, type: 3}
+  m_PrefabInstance: {fileID: 5406002851747006589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeee8b2876984b32ac96bb425d2d5735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelStrawberryCake
+--- !u!1001 &6275134310872368540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2440093409137597756}
+    m_Modifications:
+    - target: {fileID: 831350755436529865, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_Name
+      value: LevelStrawberryCake34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106943171209659523, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106943171209659523, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106943171209659523, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -639167973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800341361997857595, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498164210417189881, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498164210417189881, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -639167973
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169551456624253096, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: allSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169551456624253096, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: 'allSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8258705879226848191}
+    - target: {fileID: 7169551456624253096, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: 'allSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3033194527358053392}
+    - target: {fileID: 7169551456624253096, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: 'allSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4261246176775637261}
+    - target: {fileID: 8859061296452652408, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: flourFall
+      value: 
+      objectReference: {fileID: 6720632655747388372}
+    - target: {fileID: 8859061296452652408, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: SpriteRenderer
+      value: 
+      objectReference: {fileID: 8938472299463360799}
+    - target: {fileID: 8859061296452652408, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+      propertyPath: bakingSodaTransformMove
+      value: 
+      objectReference: {fileID: 693833534789518966}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+--- !u!4 &693833534789518966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6824427351792403434, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3033194527358053392 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9011090644306504076, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4261246176775637261 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7797769151142808721, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5031810535407707213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1351454191010357713, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32ee23bc3424e9c9063703a1516db77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelStrawberryCakeState345
+--- !u!212 &6720632655747388372 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 743580620099114568, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8258705879226848191 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2704711008585700899, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8704120012090359276 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449474054064076912, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8938472299463360799 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3106943171209659523, guid: 646b0789023aa48b3b84fe41371a198a, type: 3}
+  m_PrefabInstance: {fileID: 6275134310872368540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6705087847466689461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2440093409137597756}
+    m_Modifications:
+    - target: {fileID: 831350755436529865, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_Name
+      value: LevelStrawberryCake78
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+--- !u!114 &3114754799731713243 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8517596775244744558, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+  m_PrefabInstance: {fileID: 6705087847466689461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97119ee0e3b24b90ab622be2869ec8ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_GAME.Scripts.Level.LevelStrawberryCake.LevelStrawberryCakeState78
+--- !u!4 &8274167767710571461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3449474054064076912, guid: 88daa1040563d40d58ac91940895b5be, type: 3}
+  m_PrefabInstance: {fileID: 6705087847466689461}
+  m_PrefabAsset: {fileID: 0}

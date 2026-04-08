@@ -1,6 +1,5 @@
-﻿﻿﻿using System;
+﻿﻿﻿﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using _GAME_.Scripts.CoreGame;
 using DG.Tweening;
 using UnityEngine;
@@ -43,12 +42,11 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
         [SerializeField] protected int lipStepIndex = -1;
         
         [Header("Pattern Clean")]
-        [SerializeField] protected SpriteRenderer maskCream1;
-        [SerializeField] protected SpriteRenderer maskCream2;
-        [SerializeField] protected SpriteRenderer maskCream3;
         [SerializeField] protected GameObject step3Ob;
+        [SerializeField] protected GameObject step6Ob;
+        [SerializeField] protected GameObject step7Ob;
+        [SerializeField] protected GameObject step8Ob;
         
-
         private void Awake()
         {
             Instance = this;
@@ -171,7 +169,6 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 isUseSpriteMaskInStep = true;
                 spriteMask.SetUpdateTexture(true);
                 curStepToolOb = curStep.stepTool;
-                curStepToolOb.Init(this);
                 
                 ChangeMasksOb(curStep, () => { CallBackStep(true); });
                 curPercentWinStep = curStep.percentStepWin;
@@ -180,18 +177,18 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 {
                     case 3:
                         step3Ob.SetActive(true);
-                        maskCream1.gameObject.SetActive(true);
-                        maskCream1.DOFade(1, 1f);
-                        
-                        // maskCream2.gameObject.SetActive(true);
-                        // maskCream2.DOFade(1, 1f);
-                        //
-                        // maskCream3.gameObject.SetActive(true);
-                        // maskCream3.DOFade(1, 1f);
                         break;
-                    case 13:
-                        // shadowDell2.gameObject.SetActive(true);
-                        // shadowDell2.DOFade(1, 1f);
+                    case 6:
+                        step3Ob.SetActive(false);
+                        step6Ob.SetActive(true);
+                        break;
+                    case 7:
+                        step6Ob.SetActive(false);
+                        step7Ob.SetActive(true);
+                        break;
+                    case 8:
+                        step7Ob.SetActive(false);
+                        step8Ob.SetActive(true);
                         break;
                 }
             };
@@ -206,7 +203,6 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                         isFinishStep = true;
                         curStepToolOb?.MoveBack();
                         CheckWinOrNextState();
-                        step3Ob.SetActive(false);
                     }
                 }
                 if (Input.GetMouseButton(0))
@@ -236,7 +232,10 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 }
                 //if (lastMaskInOb != null)
                 //    lastMaskInOb.gameObject.SetActive(false);
-                curMaskObIndex++;
+                if (curMaskObIndex < curMasksOb.newMasks.Count)
+                {
+                    curMaskObIndex++;
+                }
                 curStepToolOb = null;
             };
         }

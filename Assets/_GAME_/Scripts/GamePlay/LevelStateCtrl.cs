@@ -46,6 +46,7 @@ public class LevelStateCtrl : MonoBehaviour
     [SerializeField] protected List<BaseTool> listTools;
 
     [SerializeField] protected HandleSpriteMask spriteMask;
+    
     [SerializeField] protected ParticleSystem vfxWin;
     [SerializeField] protected MasksOb curMasksOb;
     [SerializeField] protected MaskOb curMaskOb;
@@ -156,6 +157,7 @@ public class LevelStateCtrl : MonoBehaviour
         curMaskOb = curMasksOb.newMasks[curMaskObIndex];
         if (curMaskOb != null)
             curMaskOb?.gameObject?.SetActive(true);
+
     }
 
     protected virtual void ChangeMasksOb(BaseStep nextStep, Action callBack = null)

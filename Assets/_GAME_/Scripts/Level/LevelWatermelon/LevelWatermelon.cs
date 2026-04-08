@@ -36,11 +36,18 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
         [SerializeField] protected GameObject step2Ob;
         [SerializeField] protected GameObject faceMaskObFadeOut;
         
-        [Header("Pattern Clean")]
+        [Header("Pattern Clean Pattern")]
         [SerializeField] protected PatternSelectionCleanStepController eyelinerPatternStep;
         [SerializeField] protected PatternSelectionCleanStepController lipPatternStep;
         [SerializeField] protected int eyelinerStepIndex = -1;
         [SerializeField] protected int lipStepIndex = -1;
+        
+        [Header("Pattern Clean")]
+        [SerializeField] protected SpriteRenderer maskCream1;
+        [SerializeField] protected SpriteRenderer maskCream2;
+        [SerializeField] protected SpriteRenderer maskCream3;
+        [SerializeField] protected GameObject step3Ob;
+        
 
         private void Awake()
         {
@@ -123,7 +130,7 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 if (curStepIndex == 2)
                 {
                     step2Ob.SetActive(true);
-                    DoFadeSpriteRenderers(faceMaskObFadeOut,0,3f);
+                    DOVirtual.DelayedCall(1.5f, () => { DoFadeSpriteRenderers(faceMaskObFadeOut, 0, 1.5f); });
                 }
             };
 
@@ -164,15 +171,23 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 isUseSpriteMaskInStep = true;
                 spriteMask.SetUpdateTexture(true);
                 curStepToolOb = curStep.stepTool;
-
+                curStepToolOb.Init(this);
+                
                 ChangeMasksOb(curStep, () => { CallBackStep(true); });
                 curPercentWinStep = curStep.percentStepWin;
 
                 switch (curStepIndex)
                 {
-                    case 9:
-                        // shadowDell1.gameObject.SetActive(true);
-                        // shadowDell1.DOFade(1, 1f);
+                    case 3:
+                        step3Ob.SetActive(true);
+                        maskCream1.gameObject.SetActive(true);
+                        maskCream1.DOFade(1, 1f);
+                        
+                        // maskCream2.gameObject.SetActive(true);
+                        // maskCream2.DOFade(1, 1f);
+                        //
+                        // maskCream3.gameObject.SetActive(true);
+                        // maskCream3.DOFade(1, 1f);
                         break;
                     case 13:
                         // shadowDell2.gameObject.SetActive(true);
@@ -191,6 +206,7 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                         isFinishStep = true;
                         curStepToolOb?.MoveBack();
                         CheckWinOrNextState();
+                        step3Ob.SetActive(false);
                     }
                 }
                 if (Input.GetMouseButton(0))

@@ -16,4 +16,4 @@ MonoBehaviour:
   - id: 1
     prefab: {fileID: -8168263555897369398, guid: d9b5beb97d15d449392303c9e8a546d3, type: 3}
     timeLimit: 500
-    thumb: {fileID: 21300000, guid: a496e172ed028a64db118ac201306219, type: 3}
+    thumb: {fileID: 21300000, guid: f4d56bc968e4c44a99dce9684666ae1e, type: 3}

@@ -47,7 +47,7 @@ public class HandleSpriteMask : MonoBehaviour
                     drawing = false;
                     return;
                 }
-                if (!col.OverlapPoint(worldPosMouse))
+                if (!tool.IsCleanPointOverlapping(col))
                 {
                     drawing = false;
                     return;
@@ -82,7 +82,7 @@ public class HandleSpriteMask : MonoBehaviour
                 drawing = false;
                 return;
             }
-            if (col.OverlapPoint(worldPosMouse) && Vector2.Distance(lastPosMouse, worldPosMouse) > 0.01f)
+            if (tool.IsCleanPointOverlapping(col) && Vector2.Distance(lastPosMouse, worldPosMouse) > 0.01f)
             {
                 lastPosMouse = worldPosMouse;
                 UpdateTextureMask(worldPosMouse, tool.erSize);
@@ -103,11 +103,9 @@ public class HandleSpriteMask : MonoBehaviour
     {
         tool = _lvCtrl.curStepToolOb as CleanTool;
         toolWorldPosition = default;
-        if (tool == null || _lvCtrl.curStepToolOb == null || col == null) return false;
+        if (tool == null || _lvCtrl.curStepToolOb == null) return false;
 
-        Vector2 offSetTool = new(tool.offsetSpawn.x * tool.factorX, tool.offsetSpawn.y);
-        toolWorldPosition = (Vector2)_lvCtrl.curStepToolOb.transform.position + offSetTool;
-        return true;
+        return tool.TryGetCleanWorldPosition(out toolWorldPosition);
     }
 
     private void SetAlpha0Color(int index)

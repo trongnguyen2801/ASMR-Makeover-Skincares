@@ -372,7 +372,7 @@ public class LevelElsaCakeState345 : LevelStateCtrl
             curStepToolOb = curStep.stepTool;
 
             ChangeMasksOb(curStep, () => { CallBackStep(true); });
-            curPercentWinStep = curStep.percentStepWin;
+            curPercentWinStep = GetValidPercentStepWin(curStep);
 
             switch (curStepIndex)
             {
@@ -403,8 +403,8 @@ public class LevelElsaCakeState345 : LevelStateCtrl
             {
                 if (!isWinStep)
                 {
-                    SetPercentStep(spriteMask.percentDelete / curPercentWinStep);
-                    if (spriteMask.percentDelete > curPercentWinStep)
+                    SetPercentStep(Mathf.Clamp01(spriteMask.percentDelete / curPercentWinStep));
+                    if (spriteMask.percentDelete >= curPercentWinStep)
                     {
                         GameManager.Instance.uiManager.GetScreen<GamePlayScreen>().ActiveIconCorrect();
                         isWinStep = true;
@@ -502,4 +502,3 @@ public class LevelElsaCakeState345 : LevelStateCtrl
         });
     }
 }
-

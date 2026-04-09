@@ -239,6 +239,13 @@ public class LevelStateCtrl : MonoBehaviour
         percentStep = val;
     }
 
+    protected int GetValidPercentStepWin(BaseStep step, int fallbackPercent = 60)
+    {
+        if (step == null) return fallbackPercent;
+
+        return step.percentStepWin > 0 ? step.percentStepWin : fallbackPercent;
+    }
+
     public void OnToolFail(Action<int, int> onToolFail)
     {
         this.onToolFail = onToolFail;

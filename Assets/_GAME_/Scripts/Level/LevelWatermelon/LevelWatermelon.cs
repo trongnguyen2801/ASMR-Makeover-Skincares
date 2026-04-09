@@ -92,8 +92,8 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 SetPercentStep(0f);
                 switch (curStepIndex)
                 {
-                    case 9:
-                        step0Ob.SetActive(false);
+                    case 10:
+                        step9Ob.SetActive(false);
                         step10Ob.SetActive(true);
                         break;
                 }
@@ -182,7 +182,7 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                 curStepToolOb = curStep.stepTool;
                 
                 ChangeMasksOb(curStep, () => { CallBackStep(true); });
-                curPercentWinStep = curStep.percentStepWin;
+                curPercentWinStep = GetValidPercentStepWin(curStep);
 
                 switch (curStepIndex)
                 {
@@ -219,13 +219,17 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                         curStepToolOb?.MoveBack();
                         CheckWinOrNextState();
                     }
+                    else
+                    {
+                        curStepToolOb?.MoveBack();
+                    }
                 }
                 if (Input.GetMouseButton(0))
                 {
                     if (!isWinStep)
                     {
-                        SetPercentStep(spriteMask.percentDelete / curPercentWinStep);
-                        if (spriteMask.percentDelete > curPercentWinStep)
+                        SetPercentStep(Mathf.Clamp01(spriteMask.percentDelete / curPercentWinStep));
+                        if (spriteMask.percentDelete >= curPercentWinStep)
                         {
                             GameManager.Instance.uiManager.GetScreen<GamePlayScreen>().ActiveIconCorrect();
                             isWinStep = true;

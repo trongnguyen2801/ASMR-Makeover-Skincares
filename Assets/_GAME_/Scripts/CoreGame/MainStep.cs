@@ -39,7 +39,7 @@ public class BaseStep
     public BaseTool stepTool;
     public BaseOb stepRequiedOb;
     public MasksOb stepMasksOb;
-    public int percentStepWin = 80;
+    public int percentStepWin = 60;
     public ParticleSystem vfxEnd;
 }
 

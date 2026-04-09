@@ -4165,9 +4165,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006388843, y: 0.52990925}
+  m_Offset: {x: -0.019955635, y: 1.0137911}
   serializedVersion: 2
-  m_Radius: 0.30460072
+  m_Radius: 0.37695682
 --- !u!1 &3805796176970138700
 GameObject:
   m_ObjectHideFlags: 0
@@ -10431,7 +10431,7 @@ MonoBehaviour:
   hintTextSize: 45
   hintTextPos: {x: 0, y: 0}
   levelCtrlFull: {fileID: 0}
-  curPercentWinStep: 80
+  curPercentWinStep: 60
   isFinishLv: 0
   isFinishStep: 0
   isWinStep: 0

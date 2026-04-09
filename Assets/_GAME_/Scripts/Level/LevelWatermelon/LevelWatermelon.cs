@@ -46,6 +46,10 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
         [SerializeField] protected GameObject step6Ob;
         [SerializeField] protected GameObject step7Ob;
         [SerializeField] protected GameObject step8Ob;
+        [SerializeField] protected GameObject step9Ob;
+        [SerializeField] protected GameObject step10Ob;
+        [SerializeField] protected GameObject step11Ob;
+        [SerializeField] protected GameObject step12Ob;
         
         private void Awake()
         {
@@ -86,6 +90,13 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
 
                 patternController?.EnterStep(this);
                 SetPercentStep(0f);
+                switch (curStepIndex)
+                {
+                    case 9:
+                        step0Ob.SetActive(false);
+                        step10Ob.SetActive(true);
+                        break;
+                }
             };
 
             onExecute = () =>
@@ -189,6 +200,10 @@ namespace _GAME_.Scripts.Level.LevelWatermelon
                     case 8:
                         step7Ob.SetActive(false);
                         step8Ob.SetActive(true);
+                        break;
+                    case 9:
+                        step8Ob.SetActive(false);
+                        step9Ob.SetActive(true);
                         break;
                 }
             };
